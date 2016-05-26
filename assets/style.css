@@ -1,0 +1,27 @@
+@font-face {
+  font-family: FranklinGothicBookItalic;
+  src: url(fonts/FranklinGothicBookItalic.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.dfont);
+}
+
+a {
+	text-decoration: none;
+}
+
+.Menu {
+	list-style: none;
+	z-index: 2;
+}
+
+.Menu .TextMenu {
+	font-family: FranklinGothicBookItalic;
+	color: #A68A99;
+}
+
+.EnText {
+	display: none;
+}
