@@ -19,7 +19,7 @@ a {
 	z-index: 1;
 	top: 50%;
 	position: fixed;
-	right: 80px;
+	right: 24px;
 	margin-top: -19%;
 }
 
@@ -87,6 +87,10 @@ a {
 	width: 4%;
 	padding: 7% 48% 0;
 	position: absolute;
+}
+
+.Container {
+	position: relative;
 }
 
 .BoutonAccueil img {
