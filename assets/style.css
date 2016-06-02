@@ -71,13 +71,6 @@ a {
 	overflow: hidden;
 }
 
-.Section .Fond {
-	background-image: url('images/Background.svg');
-	width: 1080px;
-	height: 792px;
-	background: no-repeat;
-}
-
 .Logotype img {
 	width: 50%;
 	position: relative;
@@ -130,9 +123,21 @@ a {
 	background-color: rgba(225, 231, 243, 0.7);
 }
 
+.Fond {
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	height: 792px;
+}
+
+.Fond img {
+	width: 100%;
+	padding: 0;
+}
+
 .ElementFlotant.Presentation img {
 	margin: -80% 0 -30% -20%;
 	opacity: 0.5;
-	z-index: 1;
+	z-index: 2;
 	position: relative;
 }
