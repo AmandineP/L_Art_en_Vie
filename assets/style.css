@@ -67,6 +67,8 @@ a {
 .Section {
 	width: 100%;
 	height: 792px;
+	position: relative;
+	overflow: hidden;
 }
 
 .Section .Fond {
@@ -83,10 +85,12 @@ a {
 	right: -27%;
 }
 
-.BoutonScroll a img {
-	width: 4%;
-	padding: 7% 48% 0;
+.BoutonScroll {
 	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+	overflow: hidden;
 }
 
 .Container {
@@ -95,7 +99,7 @@ a {
 
 .BoutonAccueil img {
 	width: 10%;
-	margin: 5% 3%;
+	margin: 3% 3%;
 }
 
 .TitreSection {
@@ -127,8 +131,7 @@ a {
 }
 
 .ElementFlotant.Presentation img {
-	width: 50%;
-	margin: -30% 0 -30% -7%;
+	margin: -80% 0 -30% -20%;
 	opacity: 0.5;
 	z-index: 1;
 	position: relative;
