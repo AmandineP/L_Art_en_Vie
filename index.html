@@ -1,213 +1,260 @@
+
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>L'Art en Vie</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/Fav_Icon.png">
 
-    <title>L'Art en Vie</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Fav_Icon.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="assets/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
+
+				//equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+				easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+			});
+
+		});
+	</script>
 
 </head>
 <body>
 
-<div class="PageContainer">
-	<ul class="Menu">
-			<li class=""><a href="#" >
-				<div class="TextMenu">
-					<img src="assets/images/Home_Bouton.svg" alt="iconHome">
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#page/home" rel="address:page/home" title="home">
-				<div class="TextMenu">
-					<div class="FrText">PRÉSENTATION</div>
-					<div class="EnText">PRESENTATION</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#page/works" rel="address:page/works" title="works">
-				<div class="TextMenu">
-					<div class="FrText">LES OEUVRES</div>
-					<div class="EnText">WORKS</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#page/danceCompanies" rel="address:page/danceCompanies" title="danceCompanies">
-				<div class="TextMenu">
-					<div class="FrText">LES COMPAGNIES DE DANSE</div>
-					<div class="EnText">THE DANCE COMPANIES</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#page/program" rel="address:page/program" title="program">
-				<div class="TextMenu">
-					<div class="FrText">PROGRAMME</div>
-					<div class="EnText">PROGRAM</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#" title="practicalInformation">
-				<div class="TextMenu">
-					<div class="FrText">INFOS PRATIQUES</div>
-					<div class="EnText">PRACTICAL INFORMATION</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class=""><a href="#" title="contact">
-				<div class="TextMenu">
-					<div class="FrText">CONTACT</div>
-					<div class="EnText">CONTACT</div>
-				</div>
-				<div class="BarreMenu"></div>
-			</a></li>
-			<li class="Langue"><a href="#">
-				<img src="assets/images/Francais_Bouton.svg" alt="iconFrancais">
-			</a></li>
-			<li class="Langue"><a href="#">
-				<img src="assets/images/Anglais_Bouton.svg" alt="iconAnglais">
-			</a></li>
-	</ul>
-	<div id="fullPage">
-		<div class="Fond">
-			<img src="assets/images/Background.svg" alt="Background">
-		</div>
-		<div id="home" class="Section">
-			<div class="Container">
-				<div class="Logotype">
-					<img src="assets/images/Logotype_L_Art_en_Vie.png" alt="L'Art en Vie">
-				</div>
+<ul class="Menu">
+		<li class=""><a href="#" >
+			<div class="TextMenu">
+				<img src="assets/images/Home_Bouton.svg" alt="iconHome">
 			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#page/home" rel="address:page/home" title="home">
+			<div class="TextMenu">
+				<div class="FrText">PRÉSENTATION</div>
+				<div class="EnText">PRESENTATION</div>
 			</div>
-		</div>
-		<div id="presentation" class="Section row">
-			<div class="Container col-md-12">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection col-md-12 text-center">
-					<div class="FrTitre">Le Festival L'Art en Vie</div>
-					<div class="EnTitre">The Festival L'Art en Vie</div>
-				</div>
-				<div class="TextPresentation col-md-8">
-					<div class="Fr">Le festival L'Art en Vie est une rencontre entre les arts fixes, tel que la peinture, la sculpture et l'installation et l'art en mouvement de la danse. Ce festival est Unique en son genre. Il va vous emmener dans un monde où la danse Hiphop donne vie à une sculpture contemporaine et où la danse classique donne de l'émotion à une installation. Venez donc vous plonger dans ce monde de rêve et de beauté pour vous évader, rien qu'un moment.</div>
-					<div class="En"></div>
-				</div>
-				<div class="ElementFlotant Presentation col-md-4">
-					<img src="assets/images/Flotant_Presentation.png" alt="Fleur Flotante">
-				</div>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#page/works" rel="address:page/works" title="works">
+			<div class="TextMenu">
+				<div class="FrText">LES OEUVRES</div>
+				<div class="EnText">WORKS</div>
 			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#page/danceCompanies" rel="address:page/danceCompanies" title="danceCompanies">
+			<div class="TextMenu">
+				<div class="FrText">LES COMPAGNIES DE DANSE</div>
+				<div class="EnText">THE DANCE COMPANIES</div>
 			</div>
-		</div>
-		<div id="works" class="Section">
-			<div class="Container">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection">
-					<div class="FrTitre">Les Oeuvres</div>
-					<div class="EnTitre">Works</div>
-				</div>
-				<div class="ElementFlotant Works"></div>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#page/program" rel="address:page/program" title="program">
+			<div class="TextMenu">
+				<div class="FrText">PROGRAMME</div>
+				<div class="EnText">PROGRAM</div>
 			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#" title="practicalInformation">
+			<div class="TextMenu">
+				<div class="FrText">INFOS PRATIQUES</div>
+				<div class="EnText">PRACTICAL INFORMATION</div>
 			</div>
-		</div>
-		<div id="danceCompanies" class="Section">
-			<div class="Container">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection">
-					<div class="FrTitre">Les Compagnies de Danse</div>
-					<div class="EnTitre">Dance Companies</div>
-				</div>
-				<div class="ElementFlotant DanceCompanies"></div>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class=""><a href="#" title="contact">
+			<div class="TextMenu">
+				<div class="FrText">CONTACT</div>
+				<div class="EnText">CONTACT</div>
 			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
-			</div>
-		</div>
-		<div id="program" class="Section">
-			<div class="Container">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection">
-					<div class="FrTitre">Programme</div>
-					<div class="EnTitre">Program</div>
-				</div>
-				<div class="ElementFlotant Program"></div>
-			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
-			</div>
-		</div>
-		<div id="practicalInformation" class="Section">
-			<div class="Container">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection">
-					<div class="FrTitre">Les infos pratiques</div>
-					<div class="EnTitre">Pratical Informations</div>
-				</div>
-				<div class="ElementFlotant PraticalInformation"></div>
-			</div>
-			<div class="BoutonScroll">
-				<a href="#" title="Suivant">
-					<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
-				</a>
-			</div>
-		</div>
-		<div id="contact" class="Section">
-			<div class="Container">
-				<div class="BoutonAccueil">
-					<a href="#" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="TitreSection">
-					<div class="FrTitre">Contact</div>
-					<div class="EnTitre">Contact</div>
-				</div>
-				<div class="ElementFlotant Contact"></div>
-			</div>
-		</div>
-	</div>
-	<footer>
+			<div class="BarreMenu"></div>
+		</a></li>
+		<li class="Langue"><a href="#">
+			<img src="assets/images/Francais_Bouton.svg" alt="iconFrancais">
+		</a></li>
+		<li class="Langue"><a href="#">
+			<img src="assets/images/Anglais_Bouton.svg" alt="iconAnglais">
+		</a></li>
+</ul>
 
-	</footer>
+<div class="Fond">
 </div>
 
-	<script src="assets/jquery-2.2.0.min.js"></script>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<div class="Logotype">
+				<img src="assets/images/Logotype_L_Art_en_Vie.png" alt="L'Art en Vie">
+			</div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Le Festival L'Art en Vie</div>
+				<div class="EnTitre">The Festival L'Art en Vie</div>
+			</div>
+			<div class="TextPresentation">
+				<div class="Fr">Le festival L'Art en Vie est une rencontre entre les arts fixes, tel que la peinture, la sculpture et l'installation et l'art en mouvement de la danse. Ce festival est Unique en son genre. Il va vous emmener dans un monde où la danse Hiphop donne vie à une sculpture contemporaine et où la danse classique donne de l'émotion à une installation. Venez donc vous plonger dans ce monde de rêve et de beauté pour vous évader, rien qu'un moment.</div>
+				<div class="En"></div>
+			</div>
+			<div class="ElementFlotant Presentation">
+				<img src="assets/images/Flotant_Presentation.png" alt="Fleur Flotante">
+			</div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Les Oeuvres</div>
+				<div class="EnTitre">Works</div>
+			</div>
+			<div class="Artists">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ElementFlotant Works"></div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Les Compagnies de Danse</div>
+				<div class="EnTitre">Dance Companies</div>
+			</div>
+			<div class="Companies">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ElementFlotant DanceCompanies"></div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Programme</div>
+				<div class="EnTitre">Program</div>
+			</div>
+			<div class=""></div>
+			<div class="ElementFlotant Program"></div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Les infos pratiques</div>
+				<div class="EnTitre">Pratical Informations</div>
+			</div>
+			<div class="ElementFlotant PraticalInformation"></div>
+		</div>
+		<div class="BoutonScroll">
+			<a href="#" title="Suivant">
+				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section6">
+		<div class="intro">
+			<div class="BoutonAccueil">
+				<a href="#" title="accueil">
+					<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+				</a>
+			</div>
+			<div class="TitreSection">
+				<div class="FrTitre">Contact</div>
+				<div class="EnTitre">Contact</div>
+			</div>
+			<div class="ElementFlotant Contact"></div>
+		</div>
+	</div>
+</div>
+
 
 </body>
 </html>
