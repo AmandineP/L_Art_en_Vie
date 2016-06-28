@@ -172,11 +172,23 @@ a {
 	margin-left: 30%;
 }
 
-#section2 .intro div img {
+
+#section2 a {
+	cursor: pointer;
+}
+
+#section2 .intro a img {
 	height: 100%;
 	width: 25%;
 	float: left;
 	margin: 5px;
+}
+
+.ElementFlotant.Works img {
+	margin: -50% 0px -20% 5%;
+	opacity: 0.5;
+	z-index: 2;
+	position: relative;
 }
 
 /*----------------------------------End Works--------------------------------------*/
@@ -190,11 +202,23 @@ a {
 	margin-left: 31%;
 }
 
-#section3 .intro .Companies div img{
+#section3 a {
+	cursor: pointer;
+}
+
+#section3 .intro .Companies a img{
 	height: 100%;
 	width: 35%;
 	float: left;
 	margin: 10px;
+}
+
+.ElementFlotant.DanceCompanies img {
+	margin: 7% 0px -20% 2%;
+	opacity: 0.5;
+	z-index: 2;
+	width: 20%;
+	position: relative;
 }
 
 /*----------------------------------End DanceCompanies--------------------------------------*/
