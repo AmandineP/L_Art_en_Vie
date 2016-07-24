@@ -244,21 +244,42 @@ a {
 
 /*----------------------------------PracticalInformations--------------------------------------*/
 
-#section5 .intro .Fond img {
+#section5 .intro {
+	position: relative;
+}
+
+#section5 .intro .FondInfos img {
 	margin-left: 20%;
-	margin-top: -20%;
+	position: relative;
+}
+
+#section5 .intro .InfosGauche {
+	z-index: 2;
+	margin-top: 2%;
+	margin-left: 22%;
+	position: absolute;
+}
+
+#section5 .intro .InfosDroite {
+	z-index: 2;
+	margin-top: 1%;
+	margin-left: 69%;
 	position: absolute;
 }
 
 #section5 .intro .InfosTitre {
 	font-family: Helvetica;
 	font-variant: small-caps;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 #section5 .intro .InfosText {
 	font-family: Helvetica;
 	font-size: 15px;
+}
+
+#section5 .intro .InfosDroite .InfosText {
+	font-size: 14px;
 }
 
 #section5 .intro .InfosText a {
@@ -268,7 +289,7 @@ a {
 
 #section5 .intro .InfosTextMin {
 	font-family: Helvetica;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 /*----------------------------------End PracticalInformations--------------------------------------*/
