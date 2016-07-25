@@ -42,9 +42,12 @@
 <body>
 
 <ul class="Menu">
-		<li class=""><a href="#firstPage" >
+		<li class="home"><a href="#firstPage" title="home">
 			<div class="TextMenu">
 				<img src="assets/images/Home_Bouton.svg" alt="iconHome">
+			</div>
+			<div class="TextMenu active">
+				<img src="assets/images/Home_Bouton_active.svg" alt="iconHomeActive">
 			</div>
 		</a></li>
 		<li class=""><a href="#secondPage" title="presentation">
@@ -77,8 +80,8 @@
 		</a></li>
 		<li class=""><a href="#6thpage" title="practicalInformation">
 			<div class="TextMenu">
-				<div class="FrText">INFOS PRATIQUES</div>
-				<div class="EnText">PRACTICAL INFORMATION</div>
+				<div class="FrText">INFORMATIONS PRATIQUES</div>
+				<div class="EnText">PRACTICALS INFORMATIONS</div>
 			</div>
 			<div class="BarreMenu"></div>
 		</a></li>
@@ -312,10 +315,24 @@
 			<div class="EnTitre">Contact</div>
 		</div>
 		<div class="intro">
-			<div class="ElementFlotant Contact"></div>
+			<form>
+				<fieldset>
+					<legend>AVEZ VOUS DES QUESTIONS ?</legend>
+					<input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+					<input type="email" name="email" id="email" placeholder ="Votre email" required>
+					<textarea name="message" id="message" placeholder="Votre message" rows="10" cols="75" required></textarea>
+					<input type="submit" id="submit" value="ENVOYER" />
+					<div class="arrowSubmit"><img src="assets/images/envoyer.svg"></div>
+				</fieldset>
+			</form>
+			<div class="ElementFlotant Contact"><img src="assets/images/Flotant_Contact.png"></div>
 		</div>
 	</div>
 </div>
+
+<footer>
+	
+</footer>
 
 
 </body>
