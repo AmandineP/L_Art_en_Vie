@@ -199,6 +199,17 @@ a {
 	width: 25%;
 	float: left;
 	margin: 5px;
+	cursor: pointer;
+}
+
+#section2 .intro a .nameHover {
+	margin-left: -25.5%;
+	opacity: 0;
+}
+
+#section2 .intro a:hover  .nameHover{
+	opacity: 0.9;
+    transition: opacity 1s;
 }
 
 .ElementFlotant.Works img {
@@ -206,10 +217,6 @@ a {
 	opacity: 0.5;
 	z-index: 2;
 	position: absolute;
-}
-
-#section2 .intro .works a img:hover {
-	color: #A68A99;
 }
 
 /*----------------------------------End Works--------------------------------------*/
