@@ -220,7 +220,7 @@ a {
 }
 
 #PopIn {
-	z-index: 2;
+	display: none;
 }
 
 .fondPopIn {
@@ -229,6 +229,57 @@ a {
 	background-size: cover;
 	height: 830px;
 	margin-top:-830px;
+}
+
+.PopInContainer {
+	position: relative;
+	height: 100%;
+}
+
+.popInTitre {
+	font-family: Helvetica;
+	font-variant: small-caps;
+	font-size: 40px;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+}
+
+.photoNudes {
+	float: left;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	height: 35%;
+}
+
+.photoNudes img {
+	width: 15%;
+}
+
+.PopInContainer p {
+	position: absolute;
+	font-family: Helvetica;
+	font-size: 14px;
+	width: 50%;
+	text-align: justify;
+	bottom: 25%;
+	left: 25%;
+}
+
+.PopInContainer p a {
+	color: #000;
+}
+
+.boutonFermer {
+	position: absolute;
+	right: -10px;
+	top: 90px;
+}
+
+.boutonFermer a img {
+	width: 20%;
+	height: 20%;
 }
 
 /*----------------------------------End Works--------------------------------------*/
