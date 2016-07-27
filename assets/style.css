@@ -219,6 +219,18 @@ a {
 	position: absolute;
 }
 
+#PopIn {
+	z-index: 2;
+}
+
+.fondPopIn {
+	background-color: #E0E8F2;
+	width: 100%;
+	background-size: cover;
+	height: 830px;
+	margin-top:-830px;
+}
+
 /*----------------------------------End Works--------------------------------------*/
 
 /*----------------------------------DanceCompanies--------------------------------------*/
@@ -238,7 +250,8 @@ a {
 	height: 100%;
 	width: 35%;
 	float: left;
-	margin: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .ElementFlotant.DanceCompanies img {
@@ -247,6 +260,16 @@ a {
 	z-index: 2;
 	width: 20%;
 	position: absolute;
+}
+
+#section3 .intro a .nameHover.TheAustralianBallet {
+    margin-left: -37.9%;
+    opacity: 0;
+}
+
+#section3 .intro a:hover  .nameHover{
+	opacity: 0.9;
+    transition: opacity 1s;
 }
 
 /*----------------------------------End DanceCompanies--------------------------------------*/
