@@ -278,6 +278,10 @@ a {
 	width: 15%;
 }
 
+#myModal .photoNudes .photoWidth {
+    width: 26%;
+}
+
 .PopInContainer p {
 	position: absolute;
 	font-family: Helvetica;
@@ -385,6 +389,10 @@ a {
 
 #myModalDance .photoNudes img {
 	width: 15%;
+}
+
+#myModalDance .photoNudes .photoWidth {
+    width: 23%;
 }
 
 #myModalDance .PopInContainer p {
