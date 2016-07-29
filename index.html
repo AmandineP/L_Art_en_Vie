@@ -24,8 +24,10 @@
 
 	<script type="text/javascript" src="assets/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="assets/jquery.fullPage.js"></script>
+
 	<script type="text/javascript" src="assets/javascript.js"></script>
 	<script type="text/javascript">
+
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
@@ -41,7 +43,7 @@
 </head>
 <body>
 
-<ul class="Menu">
+<ul id="menu" class="Menu">
 		<li class="home"><a href="#firstPage" title="home">
 			<div class="TextMenu">
 				<img src="assets/images/Home_Bouton.svg" alt="iconHome">
@@ -160,9 +162,37 @@
 				<div  class="slide" id="slide1" data-anchor="slide1">
 					<div class="intro">
 						<div class="works">
-							<a href="#" title="Nudes - Richard Stainthorp">
+							<a href="#myModal" id="Nudes"  title="Nudes - Richard Stainthorp">
 								<img src="assets/images/Nudes_1.png" alt="Nudes - Richard Stainthorp">
-								<img class="nameHover Nudes" alt="Nudes - Richard Stainthorp" src="assets/images/Nudes_Hover.png"></a>
+								<img class="nameHover Nudes" alt="Nudes - Richard Stainthorp" src="assets/images/Nudes_Hover.png">
+							</a>
+							<div id="myModal">
+								<div class="popIn Nudes fondPopIn">
+									<div class="BoutonAccueil">
+										<a href="#firstPage" title="accueil">
+											<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+										</a>
+									</div>
+									<div class="PopInContainer">
+										<div class="popInTitre">Richard Stainthorp</div>
+										<div class="photoNudes">
+											<img alt="" src="assets/images/Nudes_PopIn_1.jpg">
+											<img alt="" src="assets/images/Nudes_PopIn_2.jpg">
+											<img alt="" src="assets/images/Nudes_PopIn_3.jpg">
+										</div>
+										<p>Richard Stainthorp a décidé d’utiliser le fil de fer pour réaliser ses œuvres. Un matériau froid et dur, que son talent parvient à transformer en quelque chose qu’on pourrait croire doué d’une vie propre.
+										Selon lui, la difficulté de travailler avec un tel matériau ne fait qu’ajouter à sa satisfaction lorsqu’il termine une sculpture.
+										Ses œuvres s’expriment en une succession de courbes et de mouvements. Beaucoup de grâce s’en dégage, notamment par le biais des postures qu’adoptent ses personnages.
+										<br><br>
+										<a title="Site officiel" href="http://www.stainthorp-sculpture.com/">www.stainthorp-sculpture.com</a></p>
+									</div>
+									<div class="boutonFermer">
+										<a title="Bouton Fermer" href="#">
+											<img src="assets/images/Fermer.svg" alt="Fermer">
+										</a>
+									</div>
+								</div>
+							</div>
 							<a href="#" title="Peinture conceptuelle 4 - Peter Zimmermann">
 								<img src="assets/images/Peinture_conceptuelle_Peter Zimmermann.png" alt="Peinture conceptuelle 4 - Peter Zimmermann"></a>
 							<a href="#" title="Plexus - Gabriel Dawe"><img src="assets/images/Plexus_Gabriel_Dawe.png" alt="Plexus - Gabriel Dawe"></a>
@@ -221,32 +251,6 @@
 				<img src="assets/images/Bouton_Scroll.svg" alt="boutonScroll">
 			</a>
 		</div>
-		<div id="PopIn">
-			<div class="popIn Nudes fondPopIn">
-				<div class="BoutonAccueil">
-					<a href="#firstPage" title="accueil">
-						<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
-					</a>
-				</div>
-				<div class="PopInContainer">
-					<div class="popInTitre">Richard Stainthorp</div>
-					<div class="photoNudes">
-						<img alt="" src="assets/images/Nudes_PopIn_1.jpg">
-						<img alt="" src="assets/images/Nudes_PopIn_2.jpg">
-						<img alt="" src="assets/images/Nudes_PopIn_3.jpg">
-					</div>
-					<p>The Australian Ballet existe pour inspirer, plaisir et défi public grâce à la puissance de ses performances .
-					The Australian Ballet est l'une des premières sociétés de ballet du monde et a livré des performances extraordinaires depuis plus de 50 ans. Un engagement envers l'excellence artistique, un style fougueux et une volonté de prendre des risques ont défini l'entreprise depuis ses débuts , à la fois sur scène et en dehors.
-					<br><br>
-					<a title="Site officiel" href="http://www.stainthorp-sculpture.com/">www.stainthorp-sculpture.com</a></p>
-				</div>
-				<div class="boutonFermer">
-					<a title="Bouton Fermer" href="">
-						<img src="assets/images/Fermer.svg" alt="Fermer">
-					</a>
-				</div>
-			</div>
-		</div>
 	</div>
 <!-- DanceCompanies-->
 	<div class="section" id="section3">
@@ -261,15 +265,43 @@
 		</div>
 		<div class="intro">
 			<div class="Companies">
-				<a title="Ballet opera de Lyon">
-					<img src="assets/images/Ballet_opera_de_Lyon.png" alt="Ballet opera de Lyon"></a>
+				<a title="Ballet opera de Lyon" >
+					<img src="assets/images/Ballet_opera_de_Lyon.png" alt="Ballet opera de Lyon">
+				</a>
 				<a title="Sankai Juku Meguri">
 					<img src="assets/images/Sankai_Juku_Meguri.png" alt="Sankai Juku Meguri"></a>
 				<a title="Blaze show">
 					<img src="assets/images/Blaze_show.png" alt="Blaze show"></a>
-				<a title="The australian ballet">
+				<a title="The australian ballet" href="#myModalDance">
 					<img src="assets/images/The_australian_ballet.png" alt="The australian ballet">
-					<img class="nameHover TheAustralianBallet" src="assets/images/The_australian_ballet_Hover.png" alt="The australian ballet"></a>
+					<img class="nameHover TheAustralianBallet" src="assets/images/The_australian_ballet_Hover.png" alt="The australian ballet">
+				</a>
+				<div id="myModalDance">
+					<div class="popIn Nudes fondPopIn">
+						<div class="BoutonAccueil">
+							<a href="#firstPage" title="accueil">
+								<img src="assets/images/Logotype_L_Art_en_Vie_Accueil.png" alt="Retour Accueil">
+							</a>
+						</div>
+						<div class="PopInContainer">
+							<div class="popInTitre">Richard Stainthorp</div>
+							<div class="photoNudes">
+								<img alt="" src="assets/images/Nudes_PopIn_1.jpg">
+								<img alt="" src="assets/images/Nudes_PopIn_2.jpg">
+								<img alt="" src="assets/images/Nudes_PopIn_3.jpg">
+							</div>
+							<p>The Australian Ballet existe pour inspirer, plaisir et défi public grâce à la puissance de ses performances .
+							The Australian Ballet est l'une des premières sociétés de ballet du monde et a livré des performances extraordinaires depuis plus de 50 ans. Un engagement envers l'excellence artistique, un style fougueux et une volonté de prendre des risques ont défini l'entreprise depuis ses débuts , à la fois sur scène et en dehors.
+							<br><br>
+							<a title="Site officiel" href="http://www.australianballet.com.au/">www.australianballet.com.au</a></p>
+						</div>
+						<div class="boutonFermer">
+							<a title="Bouton Fermer" href="#">
+								<img src="assets/images/Fermer.svg" alt="Fermer">
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="ElementFlotant DanceCompanies">
 				<img src="assets/images/Flotant_DanceCompanies.png" alt="Danceuse Flotante">

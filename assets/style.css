@@ -42,12 +42,14 @@ a {
 	margin-top: -20px;
 	float: right;
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 .FrText {
 	opacity: 1;
 	margin-top: 15px;
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 .Menu .home {
@@ -108,6 +110,7 @@ a {
 
 .BoutonScroll {
 	position: absolute;
+	z-index: 2;
 	width: 100%;
 	bottom: 30px;
 	text-align: center;
@@ -124,6 +127,7 @@ a {
 	top: 20px;
 	left: 20px;
 }
+
 .BoutonAccueil img {
 	width: 50%;
 }
@@ -135,7 +139,6 @@ a {
 	top: 10%;
 	left: 30%;
 	position: absolute;
-	overflow: hidden;
 }
 
 .TitreSection .EnTitre {
@@ -187,6 +190,7 @@ a {
 	height: 80%;
 	width: 50%;
 	margin-left: 30%;
+	z-index: 1;
 }
 
 
@@ -215,20 +219,37 @@ a {
 .ElementFlotant.Works img {
 	margin: -25% 0px -20% 5%;
 	opacity: 0.5;
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
 }
 
-#PopIn {
+#myModal {
 	display: none;
+    left: 0;
+    bottom: 0;
+	z-index: 99;
 }
+
+#myModal:target {
+	display: block;
+    width: 100%;
+    height: auto;
+}
+
+#section2 .intro #myModal .BoutonAccueil a img {
+	width: 50%;
+}
+
 
 .fondPopIn {
 	background-color: #E0E8F2;
-	width: 100%;
+	width: 200%;
 	background-size: cover;
 	height: 830px;
-	margin-top:-830px;
+	right: 0;
+	left: -60%;
+    bottom: 0;
+    position: relative;
 }
 
 .PopInContainer {
@@ -321,6 +342,74 @@ a {
 #section3 .intro a:hover  .nameHover{
 	opacity: 0.9;
     transition: opacity 1s;
+}
+
+#myModalDance {
+	display: none;
+    left: 0;
+    bottom: 0;
+	z-index: 99;
+}
+
+#myModalDance:target {
+	display: block;
+    width: 100%;
+    height: auto;
+}
+
+#section3 .intro #myModalDance .BoutonAccueil a img {
+	width: 50%;
+}
+
+
+#myModalDance .fondPopIn {
+	left: -62%;
+}
+
+#myModalDance .popInTitre {
+	font-family: Helvetica;
+	font-variant: small-caps;
+	font-size: 40px;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+}
+
+#myModalDance .photoNudes {
+	float: left;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	height: 35%;
+}
+
+#myModalDance .photoNudes img {
+	width: 15%;
+}
+
+#myModalDance .PopInContainer p {
+	position: absolute;
+	font-family: Helvetica;
+	font-size: 14px;
+	width: 50%;
+	text-align: justify;
+	bottom: 25%;
+	left: 25%;
+}
+
+#myModalDance .PopInContainer p a {
+	color: #000;
+}
+
+#myModalDance .boutonFermer {
+	position: absolute;
+	right: -10px;
+	top: 90px;
+}
+
+#myModalDance .boutonFermer a img {
+	width: 20%;
+	height: 20%;
 }
 
 /*----------------------------------End DanceCompanies--------------------------------------*/
