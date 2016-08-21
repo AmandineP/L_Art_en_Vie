@@ -12,6 +12,7 @@ a {
 	text-decoration: none;
 }
 
+
 /*--------------------------Menu-------------------------------*/
 
 .Menu {
@@ -23,12 +24,6 @@ a {
 	margin-top: -19%;
 }
 
-/*
-@media screen and (max-width: 1279px)
-#menu {
-  right: -8px !important;
-}
-*/
 
 .Menu .TextMenu {
 	font-family: FranklinGothicBookItalic;
@@ -432,7 +427,7 @@ a {
 }
 
 .ElementFlotant.Program img {
-	margin: 7% 0px -20% 2%;
+	margin: 7% 0 -20% 0;
 	opacity: 0.3;
 	z-index: 2;
 	width: 30%;
@@ -681,3 +676,157 @@ footer .planSite p a {
 }
 
 /*----------------------------------End Footer--------------------------------------*/
+
+/*--------------------------Media queries-------------------------------*/
+
+@media screen and (max-width: 1024px){
+	#menu {
+		display: none;
+	}
+
+	.TextPresentation {
+		width: 60%;
+	}
+
+	.TextPresentation .Fr {
+		padding: 40px 40px;
+	}
+
+	.ElementFlotant.Presentation img {
+		width: 30%;
+	}
+
+	.ElementFlotant.Works img {
+		margin: -25% 0px -20% 2%;
+		width: 30%;
+	}
+
+	#section2 .works {
+		width: 60%;
+    	margin-left: 28%;
+	}
+
+	.fondPopIn {
+		left: -47%;
+		height: 830px;
+		width: 167%;
+	}
+
+	#myModalDance .fondPopIn {
+		width: 200%;
+		height: 715px;
+	}
+
+	#section4 .intro .ProgramImage img {
+		width: 35%;
+		margin-left: 35.5%;
+		margin-top: -12%;
+	}
+
+	.ElementFlotant.DanceCompanies img {
+		width: 25%;
+	}
+
+	.ElementFlotant.Program img {
+		margin: 5% 0px -24% -2%;
+		opacity: 0.3;
+		width: 40%;
+	}
+
+	#section5 .intro {
+		height: 400px;
+		width: 760px;
+	}
+
+	#section5 .intro .InfosGauche {
+		width: 230px;
+		height: 400px;
+	    padding: 20px 46px 20px 20px;
+	}
+
+	#section5 .intro .InfosTitre {
+		font-size: 11px;
+	}
+
+	#section5 .intro .InfosText {
+		font-size: 14px;
+	}
+
+	.mapGoogle {
+	    margin-left: 230px;
+	}
+
+	.mapGoogle iframe {
+		height: 400px;
+		width: 300px;
+	}
+
+	#section5 .intro .InfosDroite {
+	    margin-left: 530px;
+	    width: 230px;
+    	height: 400px;
+        padding: 20px 30px 20px 50px;
+	}
+
+	#section5 .intro .InfosDroite .InfosText {
+		font-size: 11px;
+	}
+
+	.ElementFlotant.PraticalInformation img {
+	    margin-top: 40%;
+	    width: 34%;
+	}
+
+	.ElementFlotant.Contact img {
+		margin: -20% 0px -20% 60%;
+		width: 35%;
+	}
+
+	#section6 .intro fieldset {
+		max-width: 60%;
+	    margin-left: 18%;
+	}
+
+	#section6 .intro form legend {
+		font-size: 18px;
+		padding: 10% 0 0 2%;
+	}
+
+	#section6 .intro .arrowSubmit img {
+	    margin-top: -65px;
+    	margin-left: 350px;
+	}
+
+	.partenaires {
+		margin-left: 65px;
+	}
+
+	.principalContenu {
+		margin-left: 180px;
+	}
+
+	.newsletter {
+		margin-left: 70px;
+	}
+
+	.newsletter form .adresseEmail {
+		height: 11px;
+	}
+
+	.newsletter form #Abonner {
+		height: 13px;
+	}
+
+	.newsletter form input {
+		font-size: 6px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.Logotype img {
+		width: 70%;
+		right: -15%;
+	}
+}
+
+/*--------------------------Fin Media queries-------------------------------*/
