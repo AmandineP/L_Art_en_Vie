@@ -43,6 +43,7 @@ header .logoBurger img {
 	position: absolute;
 	right: 20px;
 	top: 20px;
+	width: 70px;
 }
 
 #menuBurger .TextMenuBurger.active img {
@@ -729,31 +730,18 @@ footer .planSite p a {
 
 /*--------------------------Media queries-------------------------------*/
 
-@media (max-width: 768px){
+
+
+
+@media screen and (max-width: 1024px){
+
 	#section0 .Logotype img {
-		width: 70%;
-		right: -15%;
-		display: none;
-	}
-
-	.ElementFlotant.Presentation img {
-		margin: 20% 0 0 20%;
-	}
-}
-
-
-@media (max-width: 1024px){
-
-	header {
-		opacity: 1;
-	}
-
-	#menu {
-		display: none;
+		width: 50%;
+		right: -27%;
 	}
 
 	.TextPresentation {
-		width: 60%;
+	    margin: -5% 25% 0;
 	}
 
 	.TextPresentation .Fr {
@@ -762,6 +750,7 @@ footer .planSite p a {
 
 	.ElementFlotant.Presentation img {
 		width: 30%;
+	    margin: 0% 0 0 5%;
 	}
 
 	.ElementFlotant.Works img {
@@ -770,14 +759,14 @@ footer .planSite p a {
 	}
 
 	#section2 .works {
-		width: 60%;
-    	margin-left: 28%;
+		width: 65%;
+    	margin-left: 25%;
 	}
 
 	.fondPopIn {
-		left: -47%;
+		left: -40%;
 		height: 830px;
-		width: 167%;
+		width: 160%;
 	}
 
 	#myModalDance .fondPopIn {
@@ -785,18 +774,24 @@ footer .planSite p a {
 		height: 715px;
 	}
 
+	#section3 .intro .Companies a img {
+	    margin-left: 21%;
+    	width: 35%;
+	}
+
 	#section4 .intro .ProgramImage img {
-		width: 35%;
-		margin-left: 35.5%;
-		margin-top: -12%;
+		width: 40%;
+    	margin-left: 30%;
+    	margin-top: -15%;
 	}
 
 	.ElementFlotant.DanceCompanies img {
 		width: 25%;
+		margin: 30% 0 0 5%;
 	}
 
 	.ElementFlotant.Program img {
-		margin: 5% 0px -24% -2%;
+		margin: 10% 0 -27% -2%;
 		opacity: 0.3;
 		width: 40%;
 	}
@@ -804,6 +799,8 @@ footer .planSite p a {
 	#section5 .intro {
 		height: 400px;
 		width: 760px;
+		right: -12%;
+		top: 0;
 	}
 
 	#section5 .intro .InfosGauche {
@@ -841,8 +838,9 @@ footer .planSite p a {
 	}
 
 	.ElementFlotant.PraticalInformation img {
-	    margin-top: 40%;
+	    margin-top: 45%;
 	    width: 34%;
+	    margin-left: -15%;
 	}
 
 	.ElementFlotant.Contact img {
@@ -890,6 +888,232 @@ footer .planSite p a {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	header {
+		opacity: 1;
+	}
+
+	#menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#section0 .Logotype img {
+		width: 70%;
+		right: -15%;
+	}
+
+	.ElementFlotant.Presentation img {
+		margin: 10% 0 0 5%;
+	}
+
+	.TextPresentation {
+		font-size: 15px;
+		line-height: 25px;
+		margin: -10% 15% 0;
+		width: auto;
+	}
+
+	#section2 .works {
+		width: 70%;
+    	margin-left: 23%;
+	}
+
+	#section2 .intro a img {
+	    width: 32%;
+	    margin: 5px 5px 5px 25px;
+	}
+
+	#section2 .intro a .nameHover {
+		margin-left: -33%;
+	}
+
+	.fp-controlArrow.fp-prev {
+		width: 8%;
+		left: 15%;
+	}
+
+	.fp-controlArrow.fp-next {
+		right: 10%;
+		width: 8%;
+	}
+
+	.fp-slidesNav.bottom {
+		bottom: 15%;
+	}
+
+	.ElementFlotant.Works a img {
+		width: 35%;
+		margin: -40% 0px -20% 5%;
+	}
+
+	#section3 .intro .Companies a img {
+		margin-left: 16%;
+		width: 45%;
+	}
+
+	#section3 .intro a .nameHover.TheAustralianBallet {
+		margin-left: -49.7%;
+	}
+
+	.ElementFlotant.DanceCompanies img {
+	    width: 30%;
+	    margin: 45% 0 0 2%;
+	}
+
+	#section4 .intro .ProgramImage img {
+	    width: 55%;
+    	margin-left: 23%;
+    	margin-top: -25%;
+	}
+
+	.ElementFlotant.Program img {
+		margin: 30% 0 -45% -2%;
+	}
+
+		#section5 .intro .InfosGauche{
+		width: 180px;
+		margin-top: -100px;
+		margin-left: 150px;
+		height: 360px;
+	}
+
+	#section5 .intro .InfosTitre {
+		font-size: 10px
+	}
+
+	#section5 .intro .InfosText {
+		font-size: 11px;
+	}
+
+	.mapGoogle iframe {
+	    margin-top: 260px;
+    	margin-left: -80px;
+    	height: 300px;
+    	width: 358px;
+	}
+
+	#section5 .intro .InfosDroite {
+		margin-left: 329px;
+		width: 180px;
+		margin-top: -100px;
+		height: 360px;
+		padding: 20px 30px 20px 35px;
+	}
+
+	#section5 .intro .InfosTextMin {
+		font-size: 7px;
+	}
+
+	.ElementFlotant.PraticalInformation img {
+	    margin-top: 60%;
+    	width: 30%;
+    	margin-left: -10%;
+	}
+
+	#section6 .intro .arrowSubmit img {
+	    margin-top: -61px;
+    	margin-left: 270px;
+	}
+
+	#section6 .intro textarea {
+		width: 80%;
+	}
+
+	.ElementFlotant.Contact img {
+		margin-bottom: -10%;
+	}
+
+	footer {
+		height: auto;
+	}
+
+	.partenaires {
+		float: none;
+    	margin: 0 37% -20% 44%;
+	}
+
+	.principalContenu {
+		margin: 10% 0% -25% 25%;
+	}
+
+	.principalContenu .reseauxSociaux {
+		margin-top: 24%;
+		margin-bottom: 30%;
+		margin-left: 5%;
+	}
+
+	.reseauxSociaux a img {
+		width: 20px;
+	}
+
+	footer .planSite p {
+		font-size: 10px;
+	}
+
+	.newsletter {
+		float: none;
+    	margin: 26% 0% 8% 0%;
+	}
+
+	.newsletter form #legendTitre {
+		font-size: 25px;
+	}
+
+	.newsletter form #legendSousTitre {
+		font-size: 12px;
+	}
+
+	.newsletter form .adresseEmail {
+		height: 20px;
+	}
+
+	.newsletter form #Abonner {
+		height: 20px;
+	}
+
+	.newsletter form input {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.BoutonAccueil img {
+		width: 35%;
+	}
+
+	.TitreSection {
+	    font-size: 27px;
+    	top: 20%;
+    	left: 20%;
+	}
+
+	.TextPresentation {
+		font-size: 12px;
+		line-height: 23px;
+		margin: -10% 6% 0;
+	}
+
+	.ElementFlotant.Presentation img {
+		margin-top: 0;
+		width: 45%;
+	}
+
+	#section2 .intro a img {
+	    width: 40%;
+    	margin: 5px 2px 5px 2px;
+	}
+
+	#section2 .intro a .nameHover {
+		margin-left: -41%;
+	}
+
+	.ElementFlotant.Works img {
+	    margin: -35% 0px -20% 2%;
+    	width: 40%;
+	}
+}
 
 
 /*--------------------------Fin Media queries-------------------------------*/
