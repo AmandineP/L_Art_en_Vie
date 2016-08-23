@@ -8,7 +8,7 @@
   src: url(fonts/Helvetica.dfont);
 }
 
-a {
+a, a:hover, a:active, a clicked {
 	text-decoration: none;
 }
 
@@ -16,43 +16,83 @@ a {
 
 header {
 	z-index: 1;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 
 	opacity: 0;
 }
 
-header a {
-	text-decoration: none;
-}
-
-#menuBurger {
-	list-style: none;
+.MenuBurger {
 	background-color: #A68A99;
-
-	position: absolute;
-	right: 0;
+	position: relative;
+	transition: transform 0.3s;
+	width: 200px;
+	height: 100%;
 	top: 0;
-	height: 800px;
-	width: 250px;
-
-	transform: translateX(250px);
+	right: -100%;
 }
 
-.logoBurger.active #menuBurger {
-	transform: translateX(-250px);
-	transition: 3s;
+.MenuBurgerInterieur {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.MenuBurger ul {
+	padding-left: 0;
+}
+
+.closeMenu {
+	color: #fff;
+	background-color: #A68A99;
+	font-size: 14px;
+	border: none;
+	box-shadow: none;
+	border-radius: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+    font-family: FranklinGothicBookItalic;
+	display: block;
+	padding: 12px 0;
+	width: 100%;
+}
+
+.closeMenu:focus {
+  outline: none;
+}
+
+body.has-active-MenuBurger {
+  overflow: hidden;
 }
 
 
-#menuBurger li {
-	margin: 20% 0 0 0;
+
+.MenuBurger .MenuBurgerInterieur li {
+	display: block;
+	text-align: center;
+	border-top: solid 1px #C4ADBC;
+	border-bottom: solid 1px #C4ADBC;
 }
 
-#menuBurger #home {
-	margin-top: 50%;
+.MenuBurger .MenuBurgerInterieur li:first-child {
+	border-top: none;
 }
+
+.MenuBurger .MenuBurgerInterieur li:last-child {
+	border-bottom: none;
+}
+
+.MenuBurger .MenuBurgerInterieur li a {
+	display: block;
+	padding: 12px 24px;
+	color: #fff;
+}
+
+
+
 
 header .logoBurger img {
 	position: absolute;
@@ -62,31 +102,20 @@ header .logoBurger img {
 }
 
 #menuBurger li a .TextMenuBurger .FrText:hover {
-	color: #F5D7B2;
+	color: #C4ADBC;
 	list-style: none;
 	text-decoration: none;
-}
-
-#menuBurger li a:hover {
-	list-style: none;
-	text-decoration: none;
-}
-
-#menuBurger .TextMenuBurger.active img {
-	display: none;
 }
 
 #menuBurger .TextMenuBurger {
 	font-family: FranklinGothicBookItalic;
+	color: #FFF;
 }
 
 #menuBurger .TextMenuBurger .EnText {
 	display: none;
 }
 
-#menuBurger .TextMenuBurger .FrText {
-	color: #FFF;
-}
 
 /*--------------------------Fin Menu Burger-------------------------------*/
 
@@ -106,21 +135,7 @@ header .logoBurger img {
 	font-family: FranklinGothicBookItalic;
 	color: #A68A99;
 	float: right;
-	margin-bottom: 10px;
-}
-
-.Menu .EnText {
-	opacity: 0;
-	margin-top: -20px;
-	float: right;
-	margin-right: 20px;
-	font-size: 14px;
-}
-
-.Menu .FrText {
-	opacity: 1;
-	margin-top: 15px;
-	margin-right: 20px;
+	margin: 15px 20px 10px 0;
 	font-size: 14px;
 }
 
@@ -128,11 +143,6 @@ header .logoBurger img {
 	width: 21px;
     height: 16px;
     margin-left: auto;
-}
-
-.Menu .TextMenu.active {
-    margin-top: -30px;
-    opacity: 0;
 }
 
 .Menu .BarreMenu {
@@ -213,10 +223,6 @@ header .logoBurger img {
 	position: absolute;
 }
 
-.TitreSection .EnTitre {
-	display: none;
-}
-
 /*----------------------------------End general--------------------------------------*/
 
 /*----------------------------------Home--------------------------------------*/
@@ -232,11 +238,6 @@ header .logoBurger img {
 
 /*----------------------------------Presentation--------------------------------------*/
 
-.TextPresentation .Fr {
-	font-family: Helvetica;
-	padding: 40px 80px;
-}
-
 .TextPresentation {
 	margin:-5% 25% 0;
 	text-align: justify;
@@ -245,6 +246,8 @@ header .logoBurger img {
 	font-size: 15px;
 	height: auto;
 	background-color: rgba(225, 231, 243, 0.7);
+	font-family: Helvetica;
+	padding: 40px 80px;
 }
 
 .ElementFlotant.Presentation img {
@@ -497,18 +500,18 @@ header .logoBurger img {
 /*----------------------------------Program--------------------------------------*/
 
 #section4 .intro .ProgramImage img {
-	width: 30%;
-	margin-left: 34.5%;
-	margin-top: -10%;
+	max-width: 450px;
+	width: 40%;
+	margin-left: 30%;
+	top: -240px;
 	position: absolute;
 }
 
 .ElementFlotant.Program img {
-	margin: 7% 0 -20% 0;
 	opacity: 0.3;
 	z-index: 2;
-	width: 30%;
-	position: relative;
+	width: 35%;
+	position: absolute;
 }
 
 /*----------------------------------End Program--------------------------------------*/
@@ -758,7 +761,6 @@ footer .planSite p a {
 
 
 
-
 @media screen and (max-width: 1024px){
 
 	#section0 .Logotype img {
@@ -770,7 +772,7 @@ footer .planSite p a {
 	    margin: -5% 25% 0;
 	}
 
-	.TextPresentation .Fr {
+	.TextPresentation {
 		padding: 40px 40px;
 	}
 
@@ -808,7 +810,7 @@ footer .planSite p a {
 	#section4 .intro .ProgramImage img {
 		width: 40%;
     	margin-left: 30%;
-    	margin-top: -15%;
+    	margin-top: 3%;
 	}
 
 	.ElementFlotant.DanceCompanies img {
@@ -991,7 +993,6 @@ footer .planSite p a {
 	#section4 .intro .ProgramImage img {
 	    width: 55%;
     	margin-left: 23%;
-    	margin-top: -25%;
 	}
 
 	.ElementFlotant.Program img {
