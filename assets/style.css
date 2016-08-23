@@ -34,9 +34,24 @@ header a {
 	position: absolute;
 	right: 0;
 	top: 0;
-	bottom: 0;
+	height: 800px;
 	width: 250px;
 
+	transform: translateX(250px);
+}
+
+.logoBurger.active #menuBurger {
+	transform: translateX(-250px);
+	transition: 3s;
+}
+
+
+#menuBurger li {
+	margin: 20% 0 0 0;
+}
+
+#menuBurger #home {
+	margin-top: 50%;
 }
 
 header .logoBurger img {
@@ -44,6 +59,17 @@ header .logoBurger img {
 	right: 20px;
 	top: 20px;
 	width: 70px;
+}
+
+#menuBurger li a .TextMenuBurger .FrText:hover {
+	color: #F5D7B2;
+	list-style: none;
+	text-decoration: none;
+}
+
+#menuBurger li a:hover {
+	list-style: none;
+	text-decoration: none;
 }
 
 #menuBurger .TextMenuBurger.active img {
@@ -786,8 +812,8 @@ footer .planSite p a {
 	}
 
 	.ElementFlotant.DanceCompanies img {
-		width: 25%;
-		margin: 30% 0 0 5%;
+	    width: 25%;
+    	margin: 15% 0 0 5%;
 	}
 
 	.ElementFlotant.Program img {
