@@ -26,15 +26,17 @@ header {
 .MenuBurger {
 	background-color: #A68A99;
 	position: fixed;
-	transition: transform 0.3s;
 	width: 200px;
 	height: 100%;
 	top: 0;
-	right: -200px;
+	right: 0;
+	transform: translateX(200px);
+	transition: transform 0.5s;
 }
 
-.logoBurger:checked .MenuBurger {
-	right: 0;
+.open{
+	transform: translateX(0);
+	transition: transform 0.5s;
 }
 
 .MenuBurgerInterieur {
@@ -65,7 +67,7 @@ header {
 }
 
 .closeMenu:focus {
-  outline: none;
+  	outline: none;
 }
 
 
