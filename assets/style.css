@@ -109,7 +109,7 @@ header .logoBurger img {
 	width: 70px;
 }
 
-#menuBurger li a .TextMenuBurger .FrText:hover {
+#menuBurger li a .TextMenuBurger:hover {
 	color: #C4ADBC;
 	list-style: none;
 	text-decoration: none;
@@ -118,10 +118,6 @@ header .logoBurger img {
 #menuBurger .TextMenuBurger {
 	font-family: FranklinGothicBookItalic;
 	color: #FFF;
-}
-
-#menuBurger .TextMenuBurger .EnText {
-	display: none;
 }
 
 
@@ -491,12 +487,6 @@ header .logoBurger img {
 	color: #000;
 }
 
-#myModalDance .boutonFermer {
-	position: absolute;
-	right: -10px;
-	top: 90px;
-}
-
 #myModalDance .boutonFermer a img {
 	width: 20%;
 	height: 20%;
@@ -602,6 +592,7 @@ header .logoBurger img {
 #section6 .intro fieldset {
 	max-width: 55%;
 	margin-left: 20%;
+	border: 0;
 	background-color: rgba(225, 231, 243, 0.7);
 }
 
@@ -660,7 +651,7 @@ header .logoBurger img {
 footer {
 	background-color: #A68A99;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	position: absolute;
 	bottom: 0;
 }
@@ -679,22 +670,11 @@ footer {
 .principalContenu {
 	position: relative;
 	float: left;
-	margin-left: 270px;
+	margin-left: 18%;
+	margin-top: 10px;
 }
 
-.reseauxSociaux .pinterest {
-	margin-right: 55px;
-}
-
-.reseauxSociaux .instagram {
-	margin-right: 55px;
-}
-
-.reseauxSociaux .facebook {
-	margin-right: 55px;
-}
-
-.reseauxSociaux .twitter {
+.reseauxSociaux .pinterest, .instagram, .facebook, .twitter {
 	margin-right: 55px;
 }
 
@@ -718,7 +698,8 @@ footer .planSite p a {
 .newsletter {
 	position: relative;
 	float: left;
-	margin-left: 150px; 
+	margin-left: 15%;
+	margin-top: 5px;
 }
 
 .newsletter form {
@@ -732,14 +713,15 @@ footer .planSite p a {
 	color: #FFF;
 	text-align: center;
 	border: 0;
+	margin-left: 1px;
 }
 
 .newsletter form #legendSousTitre {
 	font-size: 6px;
-	margin-top: -20px;
 	color: #FFF;
 	text-align: center;
 	font-style: italic;
+	margin-top: -20px;
 }
 
 .newsletter form input {
@@ -758,420 +740,7 @@ footer .planSite p a {
 	border-radius: 3px;
 	color: #FFF;
 	background-color: #A68A99;
-	border-radius: 2px;
     height: 16px;
 }
 
 /*----------------------------------End Footer--------------------------------------*/
-
-/*--------------------------Media queries-------------------------------*/
-
-@media screen and (max-width: 1024px){
-
-	#section0 .Logotype img {
-		width: 50%;
-		right: -27%;
-	}
-
-	.TextPresentation {
-	    margin: -5% 25% 0;
-	}
-
-	.TextPresentation {
-		padding: 40px 40px;
-	}
-
-	.ElementFlotant.Presentation img {
-		width: 30%;
-	    margin: 0% 0 0 5%;
-	}
-
-	.ElementFlotant.Works img {
-		margin: -25% 0px -20% 2%;
-		width: 30%;
-	}
-
-	#section2 .works {
-		width: 65%;
-    	margin-left: 25%;
-	}
-
-	.fondPopIn {
-		left: -40%;
-		height: 830px;
-		width: 160%;
-	}
-
-	#myModalDance .fondPopIn {
-		width: 200%;
-		height: 715px;
-	}
-
-	#section3 .intro .Companies a img {
-	    margin-left: 23%;
-	    width: 30%;
-	}
-
-	#section3 .intro .Companies {
-		margin-top: 8%;
-	}
-
-	#section3 .intro a .nameHover.TheAustralianBallet {
-		margin-left: -33.9%;
-	}
-
-	#section4 .intro .ProgramImage img {
-		width: 40%;
-    	margin-left: 30%;
-    	margin-top: 3%;
-	}
-
-	.ElementFlotant.DanceCompanies img {
-	    width: 25%;
-    	margin: 15% 0 0 5%;
-	}
-
-	.ElementFlotant.Program img {
-		margin: 2% 0 0 -2%;
-		opacity: 0.3;
-		width: 40%;
-	}
-
-	#section5 .intro {
-		height: 400px;
-		width: 760px;
-		right: -12%;
-		top: 0;
-	}
-
-	#section5 .intro .InfosGauche {
-		width: 230px;
-		height: 400px;
-	    padding: 20px 46px 20px 20px;
-	}
-
-	#section5 .intro .InfosTitre {
-		font-size: 11px;
-	}
-
-	#section5 .intro .InfosText {
-		font-size: 14px;
-	}
-
-	.mapGoogle {
-	    margin-left: 230px;
-	}
-
-	.mapGoogle iframe {
-		height: 400px;
-		width: 300px;
-	}
-
-	#section5 .intro .InfosDroite {
-	    margin-left: 530px;
-	    width: 230px;
-    	height: 400px;
-        padding: 20px 30px 20px 50px;
-	}
-
-	#section5 .intro .InfosDroite .InfosText {
-		font-size: 11px;
-	}
-
-	.ElementFlotant.PraticalInformation img {
-	    margin-top: 45%;
-	    width: 34%;
-	    margin-left: -15%;
-	}
-
-	.ElementFlotant.Contact img {
-		margin: -20% 0px -20% 60%;
-		width: 35%;
-	}
-
-	#section6 .intro fieldset {
-		max-width: 60%;
-	    margin-left: 18%;
-	}
-
-	#section6 .intro form legend {
-		font-size: 18px;
-		padding: 10% 0 0 2%;
-	}
-
-	#section6 .intro .arrowSubmit img {
-	    margin-top: -65px;
-    	margin-left: 350px;
-	}
-
-	.partenaires {
-		margin-left: 65px;
-	}
-
-	.principalContenu {
-		margin-left: 180px;
-	}
-
-	.newsletter {
-		margin-left: 70px;
-	}
-
-	.newsletter form .adresseEmail {
-		height: 11px;
-	}
-
-	.newsletter form #Abonner {
-		height: 13px;
-	}
-
-	.newsletter form input {
-		font-size: 6px;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	header {
-		opacity: 1;
-	}
-
-	#menu {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#section0 .Logotype img {
-		width: 70%;
-		right: -15%;
-	}
-
-	.ElementFlotant.Presentation img {
-		margin: 10% 0 0 5%;
-	}
-
-	.TextPresentation {
-		font-size: 15px;
-		line-height: 25px;
-		margin: -10% 15% 0;
-		width: auto;
-	}
-
-	#section2 .works {
-		width: 70%;
-    	margin-left: 23%;
-	}
-
-	#section2 .intro a img {
-	    width: 32%;
-	    margin: 5px 5px 5px 25px;
-	}
-
-	#section2 .intro a .nameHover {
-		margin-left: -33%;
-	}
-
-	.fp-controlArrow.fp-prev {
-		width: 8%;
-		left: 15%;
-	}
-
-	.fp-controlArrow.fp-next {
-		right: 10%;
-		width: 8%;
-	}
-
-	.fp-slidesNav.bottom {
-		bottom: 10%;
-	}
-
-	.ElementFlotant.Works a img {
-		width: 35%;
-		margin: -40% 0px -20% 5%;
-	}
-
-	#section3 .intro .Companies {
-		margin-top: 10%;
-	}
-
-	#section3 .intro .Companies a img {
-		margin-left: 22%;
-		width: 35%;
-	}
-
-	#section3 .intro a .nameHover.TheAustralianBallet {
-		margin-left: -49.7%;
-	}
-
-	.ElementFlotant.DanceCompanies img {
-	    width: 30%;
-	    margin: 30% 0 0 2%;
-	}
-
-	#section4 .intro .ProgramImage img {
-	    width: 55%;
-    	margin-left: 23%;
-	}
-
-	.ElementFlotant.Program img {
-		padding: 0;
-    	margin: 12% 0% 0% 0%;
-	}
-
-	#section5 .intro .InfosGauche{
-	    width: 180px;
-	    margin-top: -50px;
-	    margin-left: 120px;
-	    height: 310px;
-		padding: 10px 20px 20px 20px;
-	}
-
-	.mapGoogle {
-		margin-left: 230px;
-	}
-
-	#section5 .intro .InfosTitre {
-		font-size: 9px
-	}
-
-	#section5 .intro .InfosText {
-		font-size: 10px;
-	}
-
-	.mapGoogle iframe {
-		margin-top: 260px;
-		margin-left: -110px;
-		height: 250px;
-		width: 358px;
-	}
-
-	.traitSeparation {
-		margin: -5px 0 -5px 0;
-	}
-
-
-	#section5 .intro .InfosDroite {
-	    margin-left: 300px;
-	    width: 180px;
-	    margin-top: -50px;
-	    height: 310px;
-	    padding: 10px 25px 0 15px;
-	}
-
-	#section5 .intro .InfosDroite .traitSeparation {
-		margin: -15px 0 -15px 0px;
-	}
-
-	#section5 .intro .InfosTextMin {
-		font-size: 7px;
-	}
-
-	.ElementFlotant.PraticalInformation img {
-	    margin-top: 50%;
-    	width: 30%;
-    	margin-left: -10%;
-	}
-
-	#section6 .intro .arrowSubmit img {
-	    margin-top: -61px;
-    	margin-left: 270px;
-	}
-
-	#section6 .intro textarea {
-		width: 80%;
-	}
-
-	.ElementFlotant.Contact img {
-		margin-bottom: -10%;
-	}
-
-	footer {
-	    height: 160px;
-	}
-
-	.partenaires {
-		float: none;
-    	margin: 0 0 -26% 8%;
-	}
-
-	.principalContenu {
-	    margin: 10% 0% 0% 30%;
-	}
-
-	.principalContenu .reseauxSociaux {
-		margin-top: 24%;
-		margin-left: 5%;
-	}
-
-	.reseauxSociaux a img {
-		width: 20px;
-	}
-
-	footer .planSite p {
-		font-size: 10px;
-	}
-
-	.newsletter {
-		float: none;
-        margin: 0 -5% 0 0%;
-	}
-
-	.newsletter form #legendTitre {
-		font-size: 25px;
-	}
-
-	.newsletter form #legendSousTitre {
-		font-size: 12px;
-	}
-
-	.newsletter form .adresseEmail {
-		height: 20px;
-	}
-
-	.newsletter form #Abonner {
-		height: 20px;
-	}
-
-	.newsletter form input {
-		font-size: 10px;
-	}
-}
-
-@media screen and (max-width: 425px){
-	.BoutonAccueil img {
-		width: 35%;
-	}
-
-	.TitreSection {
-	    font-size: 27px;
-    	top: 20%;
-    	left: 20%;
-	}
-
-	.TextPresentation {
-		font-size: 12px;
-		line-height: 23px;
-		margin: -10% 6% 0;
-	}
-
-	.ElementFlotant.Presentation img {
-		margin-top: 0;
-		width: 45%;
-	}
-
-	#section2 .intro a img {
-	    width: 40%;
-    	margin: 5px 2px 5px 2px;
-	}
-
-	#section2 .intro a .nameHover {
-		margin-left: -41%;
-	}
-
-	.ElementFlotant.Works img {
-	    margin: -35% 0px -20% 2%;
-    	width: 40%;
-	}
-}
-
-
-/*--------------------------Fin Media queries-------------------------------*/
