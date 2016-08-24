@@ -555,7 +555,83 @@
 		margin-left: -14%;
 	}
 
+	#section6 .intro form legend {
+		font-size: 25px;
+	}
 
+	#section6 .intro form input {
+		font-size: 20px;
+	}
+
+	#section6 .intro textarea {
+		font-size: 21px;
+	}
+
+	#section6 .intro .arrowSubmit img {
+	    margin-top: -77px;
+    	margin-left: 346px;
+	}
+
+	.ElementFlotant.Contact img {
+	    width: 45%;
+	    margin-bottom: -25%;
+	}
+
+	footer {
+		height: 300px;
+	}
+
+	.partenaires {
+		margin: 2% 0 -18% 8%;
+	}
+
+	.partenaires a img {
+	    width: 45px;
+	}
+
+	.principalContenu {
+		margin: 10% 0% 0% 34%;
+	}
+
+	.principalContenu .reseauxSociaux {
+		margin-top: 5%;
+    	margin-left: 0%;
+	}
+
+	.reseauxSociaux a img {
+		width: 40px
+	}
+
+	footer .planSite {
+		margin: 5% 0% 5% -18%;
+	}
+
+	footer .planSite p {
+		font-size: 15px;
+	}
+
+	.newsletter {
+		margin: 0 -13% 0 0%;
+	}
+
+	.newsletter form #legendTitre {
+		font-size: 30px;
+	}
+
+	.newsletter form #legendSousTitre {
+	    font-size: 15px;
+    	margin-bottom: 12px;
+	}
+
+	.newsletter form .adresseEmail {
+	    height: 30px;
+    	font-size: 15px;
+	}
+
+	.newsletter form #Abonner {
+		height: 30px;
+    	font-size: 15px;
+	}
 }
 
 
