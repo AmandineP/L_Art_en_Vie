@@ -30,8 +30,11 @@ header {
 	width: 200px;
 	height: 100%;
 	top: 0;
+	right: -200px;
+}
+
+.logoBurger:checked .MenuBurger {
 	right: 0;
-	transform: translateX(200px);
 }
 
 .MenuBurgerInterieur {
@@ -751,79 +754,6 @@ footer .planSite p a {
 /*----------------------------------End Footer--------------------------------------*/
 
 /*--------------------------Media queries-------------------------------*/
-
-@media screen and (min-width: 1440px){
-	.Menu {
-	    top: 65%;
-	}
-
-	.TitreSection {
-		font-size: 60px;
-	}
-
-	.TextPresentation {
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	.ElementFlotant.Presentation img {
-	    margin: 5% 0% 0 5%;
-	    width: 18%;
-	}
-
-	.ElementFlotant.Works img{
-		width: 20%;
-	    margin: -20% 0px -20% 5%;
-	}
-
-	.fondPopIn {
-		height: 1360px;
-	}
-
-	.popInTitre {
-		font-size: 60px;
-	}
-
-	.photoNudes {
-		height: 45%;
-	}
-
-	.photoNudes img {
-		width: 20%;
-	}
-
-	#myModal .photoNudes .photoWidth {
-		width: 36%;
-	}
-
-	#myModal .photoNudes .photoWidth2 {
-		width: 21%;
-	}
-
-	.PopInContainer p {
-		font-size: 20px;
-	}
-
-	#section3 .intro a .nameHover.TheAustralianBallet {
-		margin-left: -36.5%;
-	}
-
-	.ElementFlotant.DanceCompanies img {
-		margin-top: 4%;
-	}
-
-	.ElementFlotant.Program img {
-		width: 25%;
-	}
-
-	#section4 .intro .ProgramImage img {
-		max-width: 650px;
-		margin-left: 37%;
-		top: -350px;
-	}
-
-}
-
 
 @media screen and (max-width: 1024px){
 
