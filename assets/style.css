@@ -777,7 +777,7 @@ footer .planSite p a {
 	}
 
 	.fondPopIn {
-		height: 1356px;
+		height: 1360px;
 	}
 
 	.popInTitre {
@@ -800,8 +800,26 @@ footer .planSite p a {
 		width: 21%;
 	}
 
-	.PopInContainer p{
+	.PopInContainer p {
 		font-size: 20px;
+	}
+
+	#section3 .intro a .nameHover.TheAustralianBallet {
+		margin-left: -36.5%;
+	}
+
+	.ElementFlotant.DanceCompanies img {
+		margin-top: 4%;
+	}
+
+	.ElementFlotant.Program img {
+		width: 25%;
+	}
+
+	#section4 .intro .ProgramImage img {
+		max-width: 650px;
+		margin-left: 37%;
+		top: -350px;
 	}
 
 }
