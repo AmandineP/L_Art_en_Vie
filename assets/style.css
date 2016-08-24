@@ -770,6 +770,40 @@ footer .planSite p a {
 	    margin: 5% 0% 0 5%;
 	    width: 18%;
 	}
+
+	.ElementFlotant.Works img{
+		width: 20%;
+	    margin: -20% 0px -20% 5%;
+	}
+
+	.fondPopIn {
+		height: 1356px;
+	}
+
+	.popInTitre {
+		font-size: 60px;
+	}
+
+	.photoNudes {
+		height: 45%;
+	}
+
+	.photoNudes img {
+		width: 20%;
+	}
+
+	#myModal .photoNudes .photoWidth {
+		width: 36%;
+	}
+
+	#myModal .photoNudes .photoWidth2 {
+		width: 21%;
+	}
+
+	.PopInContainer p{
+		font-size: 20px;
+	}
+
 }
 
 
