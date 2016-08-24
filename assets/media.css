@@ -512,6 +512,18 @@
 	    margin: 90% 0 0 2%;
 	}
 
+	#section4 .intro .ProgramImage img {
+		width: 80%;
+		max-width: none;
+		margin-left: 8%;
+		margin-top: -20%;
+	}
+
+	.ElementFlotant.Program img {
+	    margin: 40% 0% 0% 0%;
+	    width: 40%;
+	}
+
 	#section5 .intro .InfosGauche {
 	    width: 22em;
 	    margin-top: -15em;
