@@ -1,6 +1,6 @@
 /*--------------------------Media queries-------------------------------*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-device-width: 1024px){
 
 	#section0 .Logotype img {
 		width: 50%;
@@ -154,7 +154,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media all and (max-device-width: 1024px) {
 	header {
 		opacity: 1;
 	}
@@ -164,7 +164,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-device-width: 768px) {
 	#section0 .Logotype img {
 		width: 70%;
 		right: -15%;
@@ -372,7 +372,7 @@
 	}
 }
 
-@media screen and (max-width: 425px){
+@media all and (max-device-width: 425px){
 	.BoutonAccueil img {
 		width: 35%;
 	}
@@ -406,6 +406,12 @@
 	.ElementFlotant.Works img {
 	    margin: -35% 0px -20% 2%;
     	width: 40%;
+	}
+}
+
+@media all and (max-device-width:425px){
+	.Logotype {
+		display: none;
 	}
 }
 
