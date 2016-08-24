@@ -118,6 +118,7 @@ header .logoBurger img {
 #menuBurger .TextMenuBurger {
 	font-family: FranklinGothicBookItalic;
 	color: #FFF;
+	font-size: large;
 }
 
 
@@ -507,7 +508,7 @@ header .logoBurger img {
 .ElementFlotant.Program img {
 	opacity: 0.3;
 	z-index: 2;
-	width: 30%;
+	width: 27%;
 	position: absolute;
 }
 

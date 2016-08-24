@@ -59,7 +59,7 @@
 	.ElementFlotant.Program img {
 		margin: 2% 0 0 -2%;
 		opacity: 0.3;
-		width: 35%;
+		width: 30%;
 	}
 
 	#section5 .intro {
@@ -110,7 +110,7 @@
 	}
 
 	.ElementFlotant.Contact img {
-		margin: -20% 0px -20% 60%;
+		margin: -30% 0px -20% 60%;
 		width: 35%;
 	}
 
@@ -154,7 +154,7 @@
 	}
 }
 
-@media all and (max-device-width: 1024px) {
+@media all and (max-width: 1024px) {
 	header {
 		opacity: 1;
 	}
@@ -218,6 +218,17 @@
 	    right: 60px;
 	}
 
+	#myModal .BoutonAccueil, #myModalDance .BoutonAccueil {
+	    left: 43px;
+    	top: 16px;
+    	width: 27%;
+	}
+
+	.fondPopIn {
+		height: 915px;
+	}
+
+
 	#section3 .intro .Companies {
 		margin-top: 10%;
 	    width: 61%;
@@ -226,8 +237,8 @@
 
 	#myModalDance .fondPopIn {
 	    width: 165%;
-    	margin-left: 80px;
-		height: 810px;
+    	margin-left: 100px;
+		height: 915px;
 	}
 
 	.boutonFermer {
@@ -235,17 +246,17 @@
 	}
 
 	#section3 .intro a .nameHover.TheAustralianBallet {
-		margin-left: -39%;
+		margin-left: -38.4%;
 	}
 
 	.ElementFlotant.DanceCompanies img {
 	    width: 25%;
-    	margin: 24% 0 0 -1%;
+    	margin: 15% 0 0 -1%;
 	}
 
 	#section4 .intro .ProgramImage img {
 	    width: 55%;
-    	margin-left: 23%;
+    	margin-left: 26.5%;
 	}
 
 	.ElementFlotant.Program img {
@@ -256,13 +267,13 @@
 	#section5 .intro .InfosGauche{
 	    width: 180px;
 	    margin-top: -50px;
-	    margin-left: 120px;
+	    margin-left: 190px;
 	    height: 310px;
 		padding: 10px 20px 20px 20px;
 	}
 
 	.mapGoogle {
-		margin-left: 230px;
+		margin-left: 300px;
 	}
 
 	#section5 .intro .InfosTitre {
@@ -286,7 +297,7 @@
 
 
 	#section5 .intro .InfosDroite {
-	    margin-left: 300px;
+	    margin-left: 369px;
 	    width: 180px;
 	    margin-top: -50px;
 	    height: 310px;
@@ -308,8 +319,8 @@
 	}
 
 	#section6 .intro .arrowSubmit img {
-	    margin-top: -61px;
-    	margin-left: 270px;
+	    margin-top: -65px;
+    	margin-left: 335px;
 	}
 
 	#section6 .intro textarea {
@@ -326,11 +337,11 @@
 
 	.partenaires {
 		float: none;
-    	margin: 0 0 -26% 8%;
+    	margin: 0 0 -23% 8%;
 	}
 
 	.principalContenu {
-	    margin: 10% 0% 0% 30%;
+	    margin: 10% 0% 0% 34%;
 	}
 
 	.principalContenu .reseauxSociaux {
@@ -372,31 +383,42 @@
 	}
 }
 
-@media all and (max-device-width: 425px){
+@media all and (max-device-width:425px){
+	header .logoBurger img {
+		width: 150px;
+	}
+
+	.BoutonScroll a img {
+		width: 90px;
+	}
+
 	.BoutonAccueil img {
-		width: 35%;
+		width: 75%;
 	}
 
 	.TitreSection {
-	    font-size: 27px;
-    	top: 20%;
-    	left: 20%;
+	    font-size: 70px;
+	    top: 15%;
+    	left: 15%;
 	}
 
 	.TextPresentation {
-		font-size: 12px;
-		line-height: 23px;
-		margin: -10% 6% 0;
+	    font-size: 22px;
+	    line-height: 35px;
+    	margin: -10% 25% 0;
 	}
 
 	.ElementFlotant.Presentation img {
-		margin-top: 0;
 		width: 45%;
 	}
 
+	.fp-slidesNav.bottom {
+		bottom: 25%;
+	}
+
 	#section2 .intro a img {
-	    width: 40%;
-    	margin: 5px 2px 5px 2px;
+		width: 40%;
+    	margin: 5px;
 	}
 
 	#section2 .intro a .nameHover {
@@ -404,15 +426,136 @@
 	}
 
 	.ElementFlotant.Works img {
-	    margin: -35% 0px -20% 2%;
-    	width: 40%;
+	    margin: -50% 0px -20% 2%;
+    	width: 45%;
 	}
-}
 
-@media all and (max-device-width:425px){
-	.Logotype {
-		display: none;
+	#myModal:target, #myModalDance:target {
+	    width: 49em;
 	}
+
+	.fondPopIn {
+	    height: 130em;
+	}
+
+	#myModalDance .fondPopIn {
+		height: 125em;
+	}
+
+	#myModal .boutonFermer {
+		right: 210px;
+	}
+
+	.popInTitre, #myModalDance .popInTitre {
+		font-size: 60px;
+		left: 20%;
+	}
+
+	.PopInContainer p {
+		font-size: 30px;
+		bottom: 15%;
+	}
+
+	#myModal .BoutonAccueil, #myModalDance .BoutonAccueil {
+		left: 65px;
+	}
+
+	.photoNudes, #myModalDance .photoNudes {
+	    left: 6%;
+    	height: 0;
+	}
+
+	.photoNudes img {
+		width: 25%
+	}
+
+	#myModalDance .photoNudes img {
+		width: 23%;
+	}
+
+	#myModal .photoNudes .photoWidth {
+		width: 45%;
+	}
+
+	#myModalDance .photoNudes .photoWidth {
+		width: 35%;
+	}
+
+	#myModalDance .PopInContainer p {
+	    font-size: 30px;
+	    bottom: 20%;
+    	left: 20%;
+	}
+
+	#myModal .photoNudes .photoWidth2 {
+		width: 26%;
+	}
+
+	#myModalDance .boutonFermer {
+		right: 20em;
+	}
+
+	#section3 .intro .Companies {
+		margin-top: 25%;
+		margin-left: 33%;
+	}
+
+	#section3 .intro .Companies a img {
+	    width: 55%;
+	}
+
+	#section3 .intro a .nameHover.TheAustralianBallet {
+		margin-left: -58.4%;
+	}
+
+	.ElementFlotant.DanceCompanies img {
+	    margin: 90% 0 0 2%;
+	}
+
+	#section5 .intro .InfosGauche {
+	    width: 22em;
+	    margin-top: -15em;
+    	margin-left: 73px;
+	    height: 45em;
+	}
+
+	#section5 .intro .InfosTitre {
+		font-size: 20px;
+	}
+
+	#section5 .intro .InfosText {
+		font-size: 25px;
+	}
+
+	.mapGoogle iframe {
+		margin-top: 30em;
+		margin-left: -230px;
+		height: 30em;
+		width: 45em;
+	}
+
+	#section5 .intro .InfosDroite {
+		margin-left: 381px;
+		width: 22.9em;
+		margin-top: -15em;
+		height: 45em;
+	}
+
+	#section5 .intro .InfosDroite .InfosText {
+		font-size: 25px;
+	}
+
+	#section5 .intro .InfosTextMin {
+		font-size: 13px;
+	}
+
+	.ElementFlotant.PraticalInformation img {
+		margin-top: 105%;
+		width: 40%;
+		margin-left: -14%;
+	}
+
+
 }
 
 
