@@ -54,6 +54,7 @@ header {
   height: 50px;
   margin: 50px auto;
   border-radius: 50% 50%; 
+  cursor: pointer;
 }
 
 .closeMenu:before{
